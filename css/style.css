@@ -4,6 +4,9 @@
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -20,8 +23,8 @@ use the fonts in other ways in the font hierarchy etc. */
     --color-4: hotpink;
     --color-5: rebeccapurple;
 
-    --primary-font: "Open Sans", sans-serif;
-    --secondary-font: "Droid Serif", serif;
+    --primary-font: arialblack;
+    --secondary-font: arialround;
     --main-text-color: #000;
 
     --white-space: 1rem;
@@ -32,11 +35,19 @@ use the fonts in other ways in the font hierarchy etc. */
     --color-4: #000;
     --color-5: #000;
 
-    --primary-font: sans-serif;
-    --secondary-font: serif;
-    --main-text-color: #000;
+
 
     --white-space: 2rem;
+}
+
+@font-face {
+    font-family: 'arialblack';
+    src: url('/fonts/ariblk.ttf');
+}
+
+@font-face {
+    font-family: 'arialround';
+    src: url('/fonts/ARLRDBD.ttf');
 }
 
 html {
@@ -171,6 +182,7 @@ ul li:last-child {
 button {
     padding: 1rem;
     border-radius: 50px;
+    border: 0px;
     background: #dddddd;
     text-align: center;
     text-decoration: none;
@@ -181,6 +193,7 @@ button {
     transition: all 0.2s ease;
     cursor: pointer;
     margin: 0 1rem 1rem 0;
+
 }
 
 .secondary-button {
@@ -215,13 +228,14 @@ button:active {
 
 .h2-sample {
     font-family: var(--secondary-font);
-    font-style: italic;
     font-size: 1.25rem;
 }
 
 p.typography-sample {
-    font-family: var(--secondary-font);
+    font-family: 'Montserrat', sans-serif;
+    ;
     line-height: 1.5;
+    font-weight: 300;
     max-width: 960px;
 }
 
@@ -234,18 +248,16 @@ em {
 }
 
 a {
-    font-family: var(--primary-font);
-    color: var(--link-color);
+    font-family: 'Montserrat', sans-serif;
+    color: #D87907;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.2s;
 }
 
 a:hover {
-    color: var(--link-hover-color);
-    font-size: 4rem;
-    background-color: var(--color-4);
-    opacity: 0.1;
+    background-color: #dddddd;
+    border-radius: 20px;
 }
 
 p[class*="font-details-"] {
@@ -257,7 +269,7 @@ p[class*="font-details-"] {
 }
 
 .adjectives ul {
-    font-size: 2rem;
+    font-size: 1rem;
     opacity: 0.5;
 }
 

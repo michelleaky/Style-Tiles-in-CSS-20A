@@ -145,20 +145,17 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-    background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(../img/cream_texture.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
-    background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-    background: url(../img/pw_maze_white.png) top left repeat;
+    background: url(../img/milk_texture.jpg) top left repeat;
 }
 
 .texture-swatch-3 {
-    background: url(../img/white_paperboard.png) top left repeat;
+    background: url(../img/pap_textur.jpg) top left repeat;
 }
+
 
 .images ul {
     flex-direction: column;

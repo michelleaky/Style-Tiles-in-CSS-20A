@@ -28,7 +28,7 @@ use the fonts in other ways in the font hierarchy etc. */
 
     --bg-color: #000;
     --link-color: #000;
-    --link-hover-color: #000;
+    --link-hover-color: #FEEBE4;
     --color-4: #000;
     --color-5: #000;
 
@@ -131,11 +131,11 @@ ul li:last-child {
 }
 
 .color-swatch-4 {
-    background-color: #bababa;
+    background-color: #FEEBE4;
 }
 
 .color-swatch-5 {
-    background-color: #9e9e9e;
+    background-color: #E7F2D1;
 }
 
 .textures li {
@@ -169,23 +169,24 @@ ul li:last-child {
 }
 
 button {
-    padding: 1rem;
-    border-radius: 50px;
-    background: #dddddd;
+    padding: 1rem 2rem;
+    /*    border-radius: 50px;*/
+    background: white;
     text-align: center;
     text-decoration: none;
     font: bold 1.25em/1 var(--primary-font);
     letter-spacing: 1px;
-    color: white;
+    color: #FEEBE4;
     text-transform: uppercase;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
     margin: 0 1rem 1rem 0;
+    border: 2px solid #FEEBE4;
 }
 
 .secondary-button {
-    background: #fcf9f5;
-    color: #000;
+    background: white;
+    color: #FEEBE4;
 }
 
 button:focus,
@@ -197,7 +198,8 @@ button:focus-within {
 
 button:hover {
     background-color: var(--link-hover-color);
-    transform: scale(3) rotate(40deg);
+    transform: scale(1.1);
+    color: white;
 }
 
 button:active {
